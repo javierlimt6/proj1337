@@ -45,6 +45,8 @@ class Solution:
                     cand = [idx_list[l_ptr][0], idx_list[r_ptr][0]]
         return s[cand[0]: cand[1] + 1]
     
+    #FAILED but close
+    
 sol = Solution()
 print(sol.minWindow("bba","ab"))
 
