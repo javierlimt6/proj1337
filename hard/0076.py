@@ -61,23 +61,16 @@ class Solution:
             window_count[char] = window_count.get(char, 0) + 1
             if char in t_count and window_count[char] == t_count[char]:
                 have += 1
-
                 while l <= r and have == need:
-
                     if not cand or (r - l) < (cand[1] - cand[0]):
                         cand = [l, r]
-
                     window_count[s[l]] -= 1
-
                     if window_count[s[l]] < t_count[s[l]]:
                         have -= 1
-
                     l += 1
 
-        
         if not cand:
             return ""
-        
         return s[cand[0]: cand[1] + 1]
 
         #PASSED, good job

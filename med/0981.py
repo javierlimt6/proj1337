@@ -43,6 +43,8 @@ class TimeMap:
         #PASSED after 2x perplexity prompts, need to know that high provides the right 
         #most possible answer for "range" questions
         #so in range questions, return high or low, not mid
+        #actually you should only retrun low or high, its unreliable
+        #only return mid if u got the exactly answer (verified)
             
 
 timeMap = TimeMap();
