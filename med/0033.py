@@ -26,3 +26,5 @@ class Solution:
                 else:
                     low = mid + 1
         return -1
+    
+    #PASSED after hint of finding which part is sorted
